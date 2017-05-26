@@ -20,3 +20,6 @@ def upload():
         filename = photos.save(request.files['photo'])
         return 'uploaded'
     return "nothing to see here, move along."
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
